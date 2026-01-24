@@ -1,10 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  BrowserRouter,
+} from 'react-router-dom';
 
 //  Page Components
 import Navbar from './components/Navbar';
@@ -14,16 +16,15 @@ import Project from './pages/Project';
 import Resource from './pages/Resource';
 
 function App() {
-
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className='app'>
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/resource" element={<Resource />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/project' element={<Project />} />
+            <Route path='/resource' element={<Resource />} />
           </Routes>
         </main>
         <Footer />
@@ -32,4 +33,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
